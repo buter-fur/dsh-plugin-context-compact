@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Compact Context on Right-Click",
+    "description": "Right-click the context usage ring at the bottom-right of the composer to compact the current session (the same as typing /compact)."
+  }
+}

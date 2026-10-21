@@ -1,0 +1,10 @@
+# The dsh-plugin-context-compact bundle patch: one row in the Web profile.
+#
+# The package's browser half (`dsh.client` in package.json) is discovered by the
+# client module system on its own, so this bundle only has to mount the Host-side
+# placeholder. That row is what Settings lists, and what its switch enables and
+# disables — `disabled: true` on this id leaves the package installed but unloaded,
+# so the browser half never reaches the page and the right-click gesture disappears.
+- insert:
+    - id: context-compact
+      name: dsh-plugin-context-compact
